@@ -1,0 +1,27 @@
+def fibonacci(num):
+    if num == 0:
+        return [0]
+    elif num == 1:
+        return [0, 1]
+
+    fib = [0, 1]
+
+    while fib[-1] < num:
+        prox = fib[-1] + fib[-2]
+        fib.append(prox)
+
+    if num in fib:
+        return f'{num} pertence à sequência de Fibonacci: {fib}'
+    else:
+        return f'{num} não pertence à sequência de Fibonacci: {fib}'
+
+
+while True:
+    num = int(input('Número: '))
+    resultado = fibonacci(num)
+    print(resultado)
+    print('=*' * 20)
+    pergunta = str(input('Deseja continuar[S/N]:')).upper()
+    if pergunta == 'N':
+        break
+    print('=*' * 20)
