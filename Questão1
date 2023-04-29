@@ -1,0 +1,11 @@
+IDC = 13
+SOMA = 0
+k = 0
+
+while k < IDC:
+    k += 1
+    SOMA += k
+
+print(SOMA)
+
+
