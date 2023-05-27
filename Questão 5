@@ -1,2 +1,0 @@
-string = str(input("Digite uma frase ou palavra: "))
-print(f'{string[::-1]}')
